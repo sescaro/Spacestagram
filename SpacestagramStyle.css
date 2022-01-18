@@ -1,0 +1,136 @@
+@font-face {
+	font-family: Bronx;
+	src: url(Bronx_PersonalUse.otf);
+}
+
+@font-face {
+	font-family: Verdana, sans-serif;
+}
+
+body {
+	font-family: Bronx;
+	margin: 0;
+	background: #F4F4F4;
+}
+
+.header {
+	padding: 15px;
+	text-align: center;
+	background: #F4F4F4;
+	color: black;
+}
+
+h1 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #F4F4F4;
+}
+
+.navbar a {
+	font-size: 30px;
+	float: right;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.navbar a.left {
+	float: left;
+}
+
+.navbar a:hover {
+	background-color: #DDD;
+	color: black;
+}
+
+.navbar a.left:hover {
+	background-color: #F4F4F4;
+}
+
+.navbar .searchFunc {
+	float: right;
+}
+
+.navbar .searchFunc button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 20px;
+	background: #DDD;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.container {
+	font-family: Verdana;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px 75px 360px;
+	grid-template-areas:
+		"photo title"
+		"photo date"
+		"photo explanation";
+	margin: 0 auto;
+	border-radius: 25px;
+	background: #FFF;
+	max-width: 1300px;
+	padding: 30px;
+	align-items: center;
+	justify-items: center;
+	height: 517px;
+}
+
+img {
+	max-width: 75%;
+	grid-area: photo;
+}
+
+h2 {
+	font-size: 25px;
+	grid-area: title;
+}
+
+p {
+	font-size: 20px;
+	padding-top: 15px;
+	grid-area: date;
+}
+
+p.explanation { 
+	font-size: 18px;
+	color: gray;
+	grid-area: explanation;
+}
+
+.fa {
+	cursor: pointer;
+	user-select: none;
+}
+
+.fa:hover {
+	color: red;
+}
+
+@media screen and (max-width: 960px) {
+	img {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 35px 35px 350px;
+		grid-template-areas:
+			"photo"
+			"title"
+			"date"
+			"explanation";
+		height: auto;
+	}
+}

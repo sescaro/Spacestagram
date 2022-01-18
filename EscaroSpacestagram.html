@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--- head starts here --->
+<head>
+<title>Spacestagram</title>
+
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial scale=1">
+
+<link href = "SpacestagramStyle.css" rel = "stylesheet">
+<link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+
+</head>
+
+
+<!--- body starts here --->
+<body>
+	<div class = "navbar">
+		<a href = "EscaroSpacestagram.html" class = "left">Spacestagram</a>
+		<div class = "searchFunc">
+			<form id = "date-input-space" action = "">
+				<label for "date">Pick a Date:</label>
+				<input id = "date-field" type = "date" min = "1995-06-16" max = "2022-12-31" 
+				name = "user input" style = "margin-top: 8px; padding: 4px">
+				<button id = "search-button" type = "submit"><i class = "fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class = "container">
+		<img id = "photo" src = "" alt = "NASA's Astronomy Picture of the Day (APOD)">
+		<button><i onclick = "myFunction(this)" class = "fa fa-thumbs-up"></i></button>
+
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("fa-thumbs-down");
+			}
+		</script>
+
+		<h2 id = "title"></h2>
+		<p>Date: <span id = "ParticularDay"></span></p>
+		<p class = "explanation" id = "explanation"></p>
+	</div>
+
+	<div class = "header">
+		<h1>Brought to you by NASA's Astronomy Picture of the Day (APOD) API</h1>
+	</div>
+
+	<script src = "todaysDate.js"></script>
+	<script src = PullingFromApi.js></script>
+	<script src = "datepicker.js"></script>
+</body>
+</html>
