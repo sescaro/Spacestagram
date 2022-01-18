@@ -88,7 +88,8 @@ h1 {
 }
 
 img {
-	max-width: 75%;
+	max-width: 90%;
+	max-height: 95%;
 	grid-area: photo;
 }
 
@@ -104,7 +105,7 @@ p {
 }
 
 p.explanation { 
-	font-size: 18px;
+	font-size: 16px;
 	color: gray;
 	grid-area: explanation;
 }
