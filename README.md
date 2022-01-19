@@ -9,8 +9,8 @@ Completed requirements!
     2. Date
     3. Explanation
     4. Picture
-2. Allows user to search specific date
-3. User has ability to "like" or "unlike" the "Picture of the Day"
+2. Allows user to search APOD from a specific date
+3. User has ability to "like" or "unlike" the APOD
 
 ## Future Improvements
 1. Allow users to view a range of images in one page
